@@ -1,3 +1,13 @@
+本项目从fengdongdongwsn/PdfTool fork过来，并做了一些修改，可以打包在命令行使用。  
+使用方法 
+```shell
+java -jar PdfTool.jar test.pdf
+```
+对设置了保护的PDF文件，提取会出现乱码，以及可能报错。
+经测试，436页7.63M的PDF转换正常，223页35M的PDF转换正常，433页10M的加保护PDF文档转换报错  
+要是文件过大，可以使用apache PDFBox切割成小一下的再处理。
+---
+
 本项目是个小工具，使用了第三方库Spire的免费版本
 
 ## 目的
